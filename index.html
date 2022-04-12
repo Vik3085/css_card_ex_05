@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio html card</title>
+
+    <style>
+
+
+* {
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+margin:0 auto;
+margin-top:50px;
+display:flex;
+flex-direction: column;
+border: 0.1rem solid lightgray;  
+width:30vw;
+border-radius:0.5rem;
+overflow:hidden;
+}
+
+figure img {
+width:100%;
+background-size: cover;
+}
+
+figcaption h1 {
+padding-bottom:1.5rem;
+
+}
+
+figcaption {
+border-bottom:0.1rem solid lightgray;
+}
+
+.caption-image,
+.link-bottom,
+.items p {
+padding:1.5rem;
+}
+
+.items01,
+.items02,
+.items03 {
+border-bottom:0.1rem solid lightgray;
+}
+
+
+.link-bottom {
+list-style-type: none;
+padding-top:2.0rem;
+}
+
+    </style>
+</head>
+<body>
+
+
+<section class="card-container">
+<!-- apro section 01 -->
+    <section>
+    <!-- figure -->
+        <figure>
+            <img src="https://via.placeholder.com/500X250" alt="immagine segnaposto 500x250"/>
+            <figcaption class="caption-image">
+                <h1>Card title</h1>
+                <p>Some quick example text to build on the card title and
+                    make up the bulk of the card's content.
+                </p>
+            </figcaption>
+        </figure>
+    <!-- chiudo figure -->
+    </section>
+    <!-- chiudo section 01 -->
+
+    <!-- apro section 02 -->
+    <section class="items">
+        <div class="items01"><p>An item</p></div>
+         <div class="items02"><p>A second item</p></div>
+         <div class="items03"><p>A third item</p></div>
+    </section> 
+            <!-- chiudo section 02 -->
+
+    <!-- apro section 03 -->
+    <section class="link-bottom">
+        <a href="#">Card link</a>
+        <a href="#">Another link</a>
+    </section>
+    <!-- chiudo section 03 -->
+
+</section>
+</body>
+</html>
